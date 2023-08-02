@@ -37,5 +37,8 @@ This project looks at the relationship between health metrics and the number of 
 <a name="datasources"></a>
 ## Data Sources
 
+   #### Imported
+   Dollar General US Store Locations:  http://www.poi-factory.com/node/30072
+
 <a name="conclusion"></a>
 ## Conclusion
