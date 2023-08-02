@@ -26,7 +26,7 @@ This project looks at the relationship between health metrics and the number of 
   #### Gathering the Data
 
   #### Cleaning the Data
-    ##### Cleaned and formatted columns for Dollar General locations in excel, then imported to Python.
+  Cleaned and formatted columns for Dollar General locations in excel, then imported to Python.
     
   #### Analyzing the Data
 
