@@ -19,13 +19,23 @@ Dollar store locations have exploded over the past two decades, especially in ru
 
 <a name="dataquestion"></a>
 ## Data Question
-  Is there a relationship between the number of dollar store locations and the health metrics of a given Tennessee County? Which counties have the most dollar stores and does this correlate to high poverty, high obesity, and low median income?
+  Is there a relationship between the number of dollar store locations and the health metrics of a given Tennessee County? Which counties have the most dollar stores and how does this correlate to 
+  poverty, obesity, and median income?
 
 <a name="methodology"></a>
   ## Methodologies
   #### Gathering the Data
-  While searching for data to use with the Census metrics I came across http://www.poi-factory.com where I was able to locate location listings for each major dollar store brand. Utilizing the United States Census Bureau's API, I imported metrics to Python for the median income and poverty rate for each county in Tennessee. This project utilitzes census data from 2020 as it contains the most accurate hard numbers rather than an estimate from a non census year. 
+  Utilizing the United States Census Bureau's 2020 Decennial Census API, I imported the population for each county in Tennessee. (P1_001N) https://api.census.gov/data/2020/dec/dhc/variables.html
 
+  Utilizing the United States Census Bureau's 2020 Small Area Income and Poverty Estimates (SAIPE) API, I imported 2020 estimates on household median income and poverty rates(all ages) for each county in Tennessee. (SAEMHI_PT, SAEPOVRTALL_PT) https://api.census.gov/data/timeseries/poverty/saipe/variables.html
+  
+  This project utilitzes census data and estimates from 2020.
+
+  Utilizing the Centers for Disease Control and Prevention's Diabetes Surveillance System, I exported the table for 2020 estimated obesity percentage for adults aged 20+ for each county in Tennessee. 
+  https://gis.cdc.gov/grasp/diabetes/diabetesatlas-surveillance.html#
+  
+  While searching for data to use with the Census metrics I came across http://www.poi-factory.com where I was able to locate location listings for each major dollar store brand. 
+  
   #### Cleaning the Data
 
   Cleaned and formatted columns for Dollar General, Dollar Tree, and Family Dollar locations in excel, then imported to Python for further cleaning. I then utilized merges while dropping redundant columns to combine all dollar store locations in Tennessee for the three major brands. 
