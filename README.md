@@ -36,7 +36,7 @@ Dollar store locations have exploded over the past two decades, especially in ru
   
   While searching for data to use with the Census metrics I came across http://www.poi-factory.com where I was able to locate location listings for each major dollar store brand.
 
-  Located https://www.countyhealthrankings.org/ which used the U.S. Department of Agriculture's Food Environment Atlas (https://www.ers.usda.gov/data-products/food-environment-atlas/) to pull the percentage of residents who are food insecure for each Tennessee Counties in 2020.
+  Located https://www.countyhealthrankings.org/ which used the U.S. Department of Agriculture's Food Environment Atlas (https://www.ers.usda.gov/data-products/food-environment-atlas/) to pull the percentage of residents who are food insecure in each Tennessee County in 2020.
   
   #### Cleaning the Data
 
@@ -61,7 +61,13 @@ Dollar store locations have exploded over the past two decades, especially in ru
 
   Ran scatterplots using seaborn in Python to visualize correlation between stores per 10,000 people and median household income, obesity percentage, and food insecurity percentage.
 
+  Upon importing data to Tableau and plotting locations withing Tennessee Counties, I noticed multiple discrepencies with the number of plots in a given county and the count of dollar stores in that county.
 
+  Following further investigation, multiple zip codes in Tennessee straddle multiple counties, therefore the count of dollar stores by county was slightly skewed.
+
+  Utilized geojson file (https://hub.arcgis.com/datasets/b3b22bda38d54d0686efb4a9d60c8d1b/explore?showTable=true) for Tennessee County areas are performed geospatial join on Dollar Store locations.
+
+  Repeated analysis and respective cleaning on corrected county dollar store locations then imported to Tableau. 
 
   #### Visualizing the Data 
   Imported dollar store locations with metrics data frame to Tableau to visualize locations and metrics on a map of Tennessee.
@@ -76,9 +82,9 @@ Dollar store locations have exploded over the past two decades, especially in ru
 <a name="technologies"></a>
 ## Technologies
 
-  Excel: Preliminary Column cleaning and data organization
-  Python: pandas, numpy, seaborn, matplotlib
-  Tableau: Visualization
+    Excel: Preliminary column cleaning and data organization
+    Python: pandas, numpy, seaborn, matplotlib, geopandas
+    Tableau: Visualization
 
 
 
@@ -100,14 +106,20 @@ Dollar store locations have exploded over the past two decades, especially in ru
 
    Food Security in Tennessee: https://www.countyhealthrankings.org/explore-health-rankings/tennessee?year=2023&tab=1&measure=Food+Environment+Index
 
+   TN Counties geojson: https://hub.arcgis.com/datasets/b3b22bda38d54d0686efb4a9d60c8d1b/explore?showTable=true
+
 
 <a name="conclusion"></a>
 ## Conclusion
 
 Although the number of dollar stores is very high among counties with high obesity and poverty rates, it is misleading due to the population metric. Any business will target high population areas with more stores in an attempt to capture the highest portion of market share, therefore it is expected that heavily populated counties will have more dollar stores. This is why the creation of the dollar stores per 10,000 people metric was so imperative, as it normalized the population metric when analyzing the data.
 
-Notable Observations:
-  1.) There is a weak negative correlation between stores per 10,000 people and median income.
-  2.) There is a weak positive correlation between stores per 10,000 people and food insecurity percentage. 
-  3.) Meigs County had the highest count of stores per 10,000 people at 5.48. Household median income was 49242, poverty rate was 16 percent, food insecurity was 15% and obesity rate was 21.5 percent. With a population just under 13,000,  it is home to six Dollar Generals and one Dollar Tree. 
-  4.) Williamson County had the lowest count of stores per 10,000 people at .32. Household median income was 118257, poverty rate was 4 percent, food insecurity was 6% and obesity rate was 25.9 percent. With a population just under 250,000, it is home to five Dollar Generals and three Dollar Trees. 
+
+    Notable Observations:
+       1.) There is a weak negative correlation between stores per 10,000 people and household median income.
+       2.) There is a weak positive correlation between stores per 10,000 people and food insecurity percentage. 
+       3.) Clay County had the highest number of stores per 10,000 people, with 5.28. Clay County has three Dollar Generals and one Family Dollar with a population of 7581.
+       4.) This is in contrast to a county such as Williamson, which ranks last out of 95 counties with a stores per capita metric of .363. Williamson County has a population just under 250,000, but is only home to five Dollar Generals and four Dollar Trees. 
+       
+
+The relative most notable correlation is between the variables of stores per 10,000 people and household median income with a correlation coefficient of -0.553.
