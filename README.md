@@ -82,6 +82,7 @@ Dollar store locations have exploded over the past two decades, especially in ru
 <a name="technologies"></a>
 ## Technologies
 
+    ####
     Excel: Preliminary column cleaning and data organization
     Python: pandas, numpy, seaborn, matplotlib, geopandas
     Tableau: Visualization
