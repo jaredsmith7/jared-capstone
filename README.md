@@ -15,11 +15,11 @@
 
 <a name="overview"></a>
 ## Overview
-Dollar store locations have exploded over the past two decades, especially in rural areas that typically do not see much retail/grocery sector growth.   This project looks at the relationship between county-level metrics and the number of dollar store locations in a given Tennessee County. The goal of this analysis would be to examine the impact of dollar store locations on the physical and financial health a given county in the State of Tennesee, potentially providing insight into the strategies of the three largest companies: Dollar General, Dollar Tree, and Family Dollar. 
+Dollar store locations have exploded over the past two decades, especially in rural areas that typically do not see much retail/grocery sector growth.   This project looks at the relationship between county-level metrics and the number of dollar store locations in a given Tennessee County. The goal of this analysis was to examine the correlation of dollar store locations and the physical and financial health a given county in the State of Tennesee, potentially providing insight into the strategies of the three largest companies: Dollar General, Dollar Tree, and Family Dollar. 
 
 <a name="dataquestion"></a>
 ## Data Question
-  Is there a relationship between the number of dollar store locations and the health metrics of a given Tennessee County? Which counties have the most dollar stores and how does this correlate to 
+  Is there a relationship between the number of dollar store locations and the metrics of a given Tennessee County? Which counties have the most dollar stores and how does this correlate to 
   poverty, obesity, food security and median income?
 
 <a name="methodology"></a>
@@ -65,7 +65,7 @@ Dollar store locations have exploded over the past two decades, especially in ru
 
   Following further investigation, multiple zip codes in Tennessee straddle multiple counties, therefore the count of dollar stores by county was slightly skewed.
 
-  Utilized geojson file (https://hub.arcgis.com/datasets/b3b22bda38d54d0686efb4a9d60c8d1b/explore?showTable=true) for Tennessee County areas are performed geospatial join on Dollar Store locations.
+  Utilized geojson file (https://hub.arcgis.com/datasets/b3b22bda38d54d0686efb4a9d60c8d1b/explore?showTable=true) for Tennessee County areas and performed geospatial join on Dollar Store locations.
 
   Repeated analysis and respective cleaning on corrected county dollar store locations then imported to Tableau. 
 
@@ -84,7 +84,7 @@ Dollar store locations have exploded over the past two decades, especially in ru
 
     ####
     Excel: Preliminary column cleaning and data organization
-    Python: pandas, numpy, seaborn, matplotlib, geopandas
+    Python: pandas, numpy, seaborn, matplotlib, geopandas, requests, folium
     Tableau: Visualization
 
 
@@ -117,10 +117,15 @@ Although the number of dollar stores is very high among counties with high obesi
 
 
     Notable Observations:
-       1.) There is a weak negative correlation between stores per 10,000 people and household median income.
-       2.) There is a weak positive correlation between stores per 10,000 people and food insecurity percentage. 
-       3.) Clay County had the highest number of stores per 10,000 people, with 5.28. Clay County has three Dollar Generals and one Family Dollar with a population of 7581.
-       4.) This is in contrast to a county such as Williamson, which ranks last out of 95 counties with a stores per capita metric of .363. Williamson County has a population just under 250,000, but is only home to five Dollar Generals and four Dollar Trees. 
+       
+      1.) There is a weak negative correlation between stores per 10,000 people and household median income.
+      2.) There is a weak positive correlation between stores per 10,000 people and food insecurity percentage. 
+      3.) There is a weak positive correlation between stores per 10,000 people and poverty rate.
+      4.) Clay County had the highest number of stores per 10,000 people, with 5.28. Clay County has three Dollar Generals and one Family Dollar with a population of 7581.
+      5.) This is in contrast to a county such as Williamson, which ranks last out of 95 counties with a stores per capita metric of .363. Williamson County has a population just under 250,000, but is only home to five Dollar Generals and four Dollar Trees. 
+      6.) Rural counties in general have more dollar stores per 10,000 people than urban counties. For example, Davidson County (Nashville) has 76 total stores, with stores per 10,000 people at 1.06. Where as a county such as Pickett only has 2 stores with a population just over 5000 equating to four stores per 10,000 people.
        
 
-The relative most notable correlation is between the variables of stores per 10,000 people and household median income with a correlation coefficient of -0.553.
+The relative most notable and highest correlation coefficient is between the variables of stores per 10,000 people and household median income with a correlation coefficient of -0.553. That is, as the number of stores per 10,000 people increases, median household income decreases. 
+
+Not to say the number of dollar stores in a given county causes a decrease in household median income, but it does provide some insight on the growth strategies of dollar store companies. Rural counties typically have worse metrics and fewer resources in general when compared to urban counties, usually due to the lack of funding and resources from a smaller tax base. Dollar store companies most likely choose these locations due to a lack of competition and because they see a gap they can fill in regard to resources for local residents. Not every county has an easily accessible large scale grocer, and dollar stores seem to have jumped on the opportunity to fill the gap in recent years. 
