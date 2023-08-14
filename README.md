@@ -109,6 +109,8 @@ Dollar store locations have exploded over the past two decades, especially in ru
 
    TN Counties geojson: https://hub.arcgis.com/datasets/b3b22bda38d54d0686efb4a9d60c8d1b/explore?showTable=true
 
+   Special thanks to user Mahoney and Jonathan Melby at POI-factory.com for their volunteer work.
+
 
 <a name="conclusion"></a>
 ## Conclusion
