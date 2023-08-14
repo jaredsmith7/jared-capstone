@@ -84,7 +84,7 @@ Dollar store locations have exploded over the past two decades, especially in ru
   Excel: Preliminary column cleaning and data organization
 
   Python: pandas, geopandas, numpy, seaborn, matplotlib, requests, folium
-  
+
   Tableau: Visualization
 
 
@@ -116,12 +116,17 @@ Dollar store locations have exploded over the past two decades, especially in ru
 Although the number of dollar stores is very high among counties with high obesity and poverty rates, it is misleading due to the population metric. Any business will target high population areas with more stores in an attempt to capture the highest portion of market share, therefore it is expected that heavily populated counties will have more dollar stores. This is why the creation of the dollar stores per 10,000 people metric was so imperative, as it normalized the population metric when analyzing the data.
 
 
-    #### Notable Observations:
+  #### Notable Observations:
       1.) There is a weak negative correlation between stores per 10,000 people and household median income.
+
       2.) There is a weak positive correlation between stores per 10,000 people and food insecurity percentage. 
+
       3.) There is a weak positive correlation between stores per 10,000 people and poverty rate.
+
       4.) Clay County had the highest number of stores per 10,000 people, with 5.28. Clay County has three Dollar Generals and one Family Dollar with a population of 7581.
+
       5.) This is in contrast to a county such as Williamson, which ranks last out of 95 counties with a stores per capita metric of .363. Williamson County has a population just under 250,000, but is only home to five Dollar Generals and four Dollar Trees. 
+      
       6.) Rural counties in general have more dollar stores per 10,000 people than urban counties. For example, Davidson County (Nashville) has 76 total stores, with stores per 10,000 people at 1.06. Where as a county such as Pickett only has 2 stores with a population just over 5000 equating to four stores per 10,000 people.
        
 
