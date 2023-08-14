@@ -1,3 +1,5 @@
+Variables
+
 Store - 1 of 3 company stores: Dollar General, Dollar Tree, Family Dollar
 County_Store_Count - Number of Dollar Generals, Dollar Trees, and Family Dollars in a given county
 Population - Population of Tennessee County in 2020
@@ -7,3 +9,8 @@ Obesity_Rate - Adults aged 20+ classified as Obese on BMI metric in 2020
 Percent_Food_Insecure - Percentage of population who lack adequate access to food in 2020
 Stores_Per_Capita - Number of stores in given county divided by population
 Stores_Per_10k - Number of stores in given county per 10,000 residents
+
+Data Frames
+
+Count_Merge: All dollar stores locations with all variables
+count_by_county: Counties in TN with count of dollar stores and all variables
