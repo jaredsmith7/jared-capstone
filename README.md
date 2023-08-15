@@ -19,8 +19,7 @@ Dollar store locations have exploded over the past two decades, especially in ru
 
 <a name="dataquestion"></a>
 ## Data Question
-  Is there a relationship between the number of dollar store locations and the metrics of a given Tennessee County? Which counties have the most dollar stores and how does this correlate to 
-  poverty, obesity, food security and median income?
+  Is there a relationship between the number of dollar store locations and the metrics of a given Tennessee County? Which counties have the most dollar stores and how does this correlate to poverty, obesity, food security and median income?
 
 <a name="methodology"></a>
   ## Methodologies
@@ -130,6 +129,8 @@ Although the number of dollar stores is very high among counties with high obesi
    5.) This is in contrast to a county such as Williamson, which ranks last out of 95 counties with a stores per capita metric of .363. Williamson County has a population just under 250,000, but is only home to five Dollar Generals and four Dollar Trees. 
 
    6.) Rural counties in general have more dollar stores per 10,000 people than urban counties. For example, Davidson County (Nashville) has 76 total stores, with stores per 10,000 people at 1.06. Where as a county such as Pickett only has 2 stores with a population just over 5000 equating to four stores per 10,000 people.
+
+   7.) Trousdale, Moore, and Van Buren counties are the only three counties with one store and they are all Dollar Generals.
        
 
 The relative most notable and highest correlation coefficient is between the variables of stores per 10,000 people and household median income with a correlation coefficient of -0.553. That is, as the number of stores per 10,000 people increases, median household income decreases. 
