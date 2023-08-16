@@ -1,4 +1,4 @@
-# jared-capstone
+# An Analysis of Dollar Stores in Tennessee
 
 ## Table of Contents
 
@@ -47,7 +47,7 @@ Dollar store locations have exploded over the past two decades, especially in ru
 
 
 
-  #### Analyzing the Data
+  #### Analysis
   Imported Tennessee zip codes by county and merged to Dollar Store data frame to reach a count of dollar stores by county. 
 
   Concatenated metrics of population, household median income, and poverty rate with count of dollar stores by county. 
@@ -68,7 +68,7 @@ Dollar store locations have exploded over the past two decades, especially in ru
 
   Repeated analysis and respective cleaning on corrected county dollar store locations then imported to Tableau. 
 
-  #### Visualizing the Data 
+  #### Visualizations
   Imported dollar store locations with metrics data frame to Tableau to visualize locations and metrics on a map of Tennessee.
 
   Plotted each dollar store location with county borders then created separate maps for each variable.
@@ -108,7 +108,7 @@ Dollar store locations have exploded over the past two decades, especially in ru
 
    TN Counties geojson: https://hub.arcgis.com/datasets/b3b22bda38d54d0686efb4a9d60c8d1b/explore?showTable=true
 
-   Special thanks to user Mahoney and Jonathan Melby at POI-factory.com for their volunteer work.
+   Special thanks to user Mahoney and Jonathan Melby at POI-factory.com for their volunteer work. Their updated location data sets were a key part of this analysis.
 
 
 <a name="conclusion"></a>
