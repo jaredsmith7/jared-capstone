@@ -4,7 +4,7 @@
 
 
 1. [Overview](#overview)
-2. [Data Question](#dataquestion)
+2. [Data Questions](#dataquestion)
 3. [Methodology](#methodology)
 4. [Technologies](#technologies)
 5. [Data Sources](#datasources)
@@ -17,8 +17,8 @@
 ## Overview
 Dollar store locations have exploded over the past two decades, especially in rural areas that typically do not see much retail/grocery sector growth.   This project looks at the relationship between county-level metrics and the number of dollar store locations in a given Tennessee County. The goal of this analysis was to examine the correlation of dollar store locations and the physical and financial health a given county in the State of Tennesee, potentially providing insight into the strategies of the three largest companies: Dollar General, Dollar Tree, and Family Dollar. 
 
-<a name="dataquestion"></a>
-## Data Question
+<a name="dataquestions"></a>
+## Data Questions
   Is there a relationship between the number of dollar store locations and the metrics of a given Tennessee County? Which counties have the most dollar stores and how does this correlate to poverty, obesity, food security and median income?
 
 <a name="methodology"></a>
@@ -77,6 +77,7 @@ Dollar store locations have exploded over the past two decades, especially in ru
 
   Created story from maps and charts to present findings and observations.
 
+  https://public.tableau.com/views/AnAnalysisofDollarStoresinTennessee-JaredSmith/Story1?:language=en-US&:display_count=n&:origin=viz_share_link
 
 <a name="technologies"></a>
 ## Technologies
