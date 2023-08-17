@@ -118,11 +118,13 @@ Although the number of dollar stores is very high among counties with high obesi
 
 
   #### Notable Observations:
-   1.) There is a weak negative correlation between stores per 10,000 people and household median income.
+   1.) There is a weak negative correlation between stores per 10,000 people and household median income. (-0.553)
 
-   2.) There is a weak positive correlation between stores per 10,000 people and food insecurity percentage. 
+   2.) There is a weak positive correlation between stores per 10,000 people and food insecurity percentage. (0.526)
 
-   3.) There is a weak positive correlation between stores per 10,000 people and poverty rate.
+   3.) There is a weak positive correlation between stores per 10,000 people and poverty rate. (0.413)
+
+   4.) There is a very weak negative correlation between stores per 10,000 people and obesity rate. (-0.229)
 
    4.) Clay County had the highest number of stores per 10,000 people, with 5.28. Clay County has three Dollar Generals and one Family Dollar with a population of 7581.
 
@@ -133,6 +135,6 @@ Although the number of dollar stores is very high among counties with high obesi
    7.) Trousdale, Moore, and Van Buren counties are the only three counties with one store and they are all Dollar Generals.
        
 
-The relative most notable and highest correlation coefficient is between the variables of stores per 10,000 people and household median income with a correlation coefficient of -0.553. That is, as the number of stores per 10,000 people increases, median household income decreases. 
+The relative most notable and highest correlation coefficient is between the variables of stores per 10,000 people and household median income with a correlation coefficient of -0.553. That is, as the number of stores per 10,000 people increases, median household income decreases. We also have the notable positve correlation between food insecurity and stores per 10,000 people at 0.526.
 
-Not to say the number of dollar stores in a given county causes a decrease in household median income, but it does provide some insight on the growth strategies of dollar store companies. Rural counties typically have worse metrics and fewer resources in general when compared to urban counties, usually due to the lack of funding and resources from a smaller tax base. Dollar store companies most likely choose these locations due to a lack of competition and because they see a gap they can fill in regard to resources for local residents. Not every county has an easily accessible large scale grocer, and dollar stores seem to have jumped on the opportunity to fill the gap in recent years. 
+This analysis is not concluding that the number of dollar stores in a given county causes a decrease in household median income or an increase in food insecurity, poverty, and obesity. However it does provide some insight on the growth strategies of dollar store companies. Rural counties typically have worse metrics and fewer resources in general when compared to urban counties, usually due to the lack of funding and resources from a smaller tax base. Dollar store companies most likely choose these locations due to a lack of competition and because they see a gap they can fill in regard to resources for local residents. Not every county has an easily accessible large scale grocer, and dollar stores seem to have jumped on the opportunity to fill the gap in recent years. 
